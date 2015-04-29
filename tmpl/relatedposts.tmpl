@@ -1,0 +1,14 @@
+<!-- tmpl_include name="header.tmpl" -->
+
+<p>
+<strong>Related posts for : <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></strong>
+</p>
+
+<!-- tmpl_loop name="related_posts_loop" -->
+<p>
+<a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a> - <!-- tmpl_var name="formatted_modified_date" --><br />
+</p>
+<!-- weighted count <!-- tmpl_var name="wt" --> -->
+<!-- /tmpl_loop -->
+
+<!-- tmpl_include name="footer.tmpl" -->

@@ -1,0 +1,13 @@
+<!-- tmpl_include name="header.tmpl" -->
+<p>
+Search Results For &ldquo;<!-- tmpl_var name="keywords" -->&rdquo; 
+ - <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="search_type" -->/<!-- tmpl_var name="search_string" -->">#</a>
+ - <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="search_type" -->/<!-- tmpl_var name="search_string" -->/rss">rss</a>
+</p>
+<!-- tmpl_if nomatches -->
+<p>
+No matches found.
+</p>
+<!-- /tmpl_if -->
+<!-- tmpl_include name="inc_streamloop.tmpl" -->
+<!-- tmpl_include name="footer.tmpl" -->

@@ -1,0 +1,468 @@
+/* splitscreen.css - September 30, 2013 
+   Much of the CSS is adaptated from the CSS used in the
+   Textile live preview editor found at:
+   http://borgar.github.io/textile-js/
+*/
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;  
+    background: #ddd;  
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#saveposttext {
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+#container {
+}
+
+#tx_input {
+    font-family: 'Droid Sans Mono', "Courier New", Courier,  monospace, sans-serif;
+    font-size: 1.1em;   
+    color: #222;
+    line-height: 1.7em;
+    display: block;
+/*    resize: none; */
+    background: #f8f8ff;
+}
+
+#narrow_tx_input {
+    background: yellow;
+    height: 150px;
+    margin: 30% 0 0 0;
+    border: none;
+}
+
+label {
+    display: block;
+    padding: 4px 0;
+    font-weight: bold;
+    color: #777;
+}
+
+.col {
+    margin: 0;
+    width: 49%;
+    height: 95%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.singlecol {
+    margin: 0;
+    width: 60%;
+    height: 95%; 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    left: 19%;
+}
+
+.prevsinglecol {
+    height: 95%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 999;
+}
+
+body > h1 {
+    margin : 0;
+    padding : 10px 3% 0;
+    font-size : 20px;
+    color : #444;
+}
+
+#col_left {
+    float: left;
+    position: absolute;
+    z-index: 100; 
+}
+
+#col_right {
+    float: right; 
+    right: 1%; 
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid #aaaaaa;
+    outline: none;
+    display: block;
+    margin: 0;
+    padding: 4px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#text_preview {
+    overflow: auto;
+}
+
+.tools {
+    position: absolute;
+    top: .2em;
+    right: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #dddddd), color-stop(1, #ffffff));
+}
+
+::-webkit-scrollbar:horizontal {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dddddd), color-stop(1, #ffffff));
+}
+
+::-webkit-scrollbar-corner {
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #dddddd), color-stop(0.6, #ffffff));
+}
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+    height: 0;
+    width: 0;
+    display: block;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:horizontal, ::-webkit-scrollbar-thumb:vertical {
+    border: 1px solid #bbbbbb;
+    height: 50px;
+    width: 50px;
+    -webkit-border-radius: 6px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #dddddd), color-stop(1, #bbbbbb));
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dddddd), color-stop(1, #bbbbbb));
+}
+
+#text_preview {
+    line-height: 1.7em;
+    font-size: 1.2em;  
+    color: #222222;
+}
+
+#navmenu ul {
+    list-style-type: none;
+ /*   background: #120a8f; 14jan2014 */   /* ultramarine blue */
+    background: #f8f8f8;
+    color: #120a8f;
+    padding: .4em 0 .5em 0; 
+    margin: 0 0 0 0;
+    font-size: .9em;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+#navmenu ul li {
+    display: inline-block; 
+}
+
+#navmenu ul li a {
+    text-decoration: none;
+    /* color: #f8f8f8; 14jan2014 */
+    color: #777777;
+    text-align: left;
+    padding: 0 .5em;
+}
+
+#navmenu ul li a:hover {
+    text-decoration: underline;
+    /* color: #ffffff; 14jan2014 */
+    color: #000000;
+}
+
+#navmenu #navmenutext {
+    display: none;
+}
+
+#content {
+    line-height: 1.7em;
+    font-size: 1.2em;  
+    color: #222222;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none; 
+    color: #0000ff;
+}
+
+a:visited {
+    color: #cc3399;
+} 
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline; 
+    color: #ff0000;
+}
+
+.bluebutton {
+    font-size: 1em;
+    color: #f8f8f8;
+    background: #120a8f; 
+    border: 1px solid #120a8f;
+color: #666;
+background: #f8f8f8;
+border: 1px solid #888;
+}
+
+.bluebutton:hover {
+    color: #ffffff;
+    background: #0000cd;
+color: #000;
+background: #fff;
+border: 1px solid #000;
+}
+
+.greenbutton {
+    font-size: 1em;
+    color: #f8f8f8;
+    background: #00cc33; 
+    border: 1px solid #00cc33;
+}
+.greenbutton:hover {
+    color: #ffffff;
+}
+
+br {
+    padding: 50px;
+}
+
+.codetext {
+    color: #000000; 
+    font-size: .8em;
+    line-height: 1em;
+    font-family: "Courier New", Courier,  monospace;
+    background: #f0fff0; /* light blue */
+}
+
+table {
+    font-size: .8em;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #000;
+}
+
+h1 {
+    font-size: 1.40em;
+    border-bottom: none; 
+}
+
+h2 {
+    font-size: 1.30em; 
+    border-bottom: none; 
+    padding-top: 1.5em;
+}
+
+h3 {
+    font-size: 1.20em; 
+    border-bottom: none; 
+    padding-top: 1.5em;
+}
+
+h4 {
+    font-size: 1.15em; 
+    border-bottom: none; 
+    padding-top: 1.5em;
+}
+
+h5 {
+    font-size: 1.10em; 
+    border-bottom: none; 
+    padding-top: 1.5em;
+}
+
+a.extlink {
+    text-decoration: none;
+}
+
+a.extlink:hover {
+    color: red;
+}
+
+#text_preview strong {
+    color: #000000;
+}
+
+#text_preview b {
+    background: #ffff00;
+    font-weight: normal;
+}
+
+.greytext a {
+    color: #888888;
+}
+
+.greytext a:visited {
+    color: #888888;
+}
+
+.greytext a:hover {
+    color: #000000; 
+    text-decoration: underline;
+}
+
+.highlighted {
+    margin-right: .5em;
+    margin-left: .5em;
+    background: #f5faff;
+    padding: .2em .2em 0 .2em;
+    border: 1px solid #cccccc;
+}
+
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+
+ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+}
+
+ol > li:before {
+    content:counter(li) ". "; /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    font-weight:bold;
+    text-align:center;
+}
+
+li ol {
+    margin-top:6px;
+} 
+
+ol ol li:last-child {
+    margin-bottom:0;
+}
+
+pre code {
+    color: brown;
+/*    font-size: 0.8em; */
+    font-size: 1em;
+    line-height: 1em;
+    font-family: "Courier New", Courier,  monospace;
+}
+
+code {
+    color: brown;
+/*    font-size: 0.8em; */
+    font-size: 1em;
+    line-height: 1em;
+    font-family: "Courier New", Courier,  monospace;
+}
+
+/*  http://stackoverflow.com/questions/2295766/how-to-create-a-scrollable-div-tag-vertically-supported-in-chrome */
+.codeClass {
+    width: 100%;
+    overflow-y: scroll;
+    color: #000000; 
+    font-size: .9em;
+    line-height: 1em;
+    font-family: "Courier New", Courier,  monospace;
+    background: #f0fff0; /* light blue */
+    max-height:500px; 
+}
+
+blockquote {
+  margin-left: .6em;
+  padding-left: 1em;
+}
+
+@media screen and (min-width: 320px) {
+    .singlecol, .prevsinglecol {
+        margin: 0;
+        width: 95%;
+        left: 2%;
+/*        height: 95%; */
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .singlecol, .prevsinglecol {
+        margin: 0;
+        width: 85%;
+        left: 7%;
+/*        height: 95%;  */
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .singlecol, .prevsinglecol {
+        margin: 0;
+        width: 75%;
+        left: 12%;
+/*        height: 95%; */
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .singlecol { 
+        margin: 0; 
+        width: 65%;  
+/*        height: 95%; */
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        left: 17%;
+    }
+
+   .prevsinglecol { 
+        left: 0%;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 43em;
+    }
+}
+

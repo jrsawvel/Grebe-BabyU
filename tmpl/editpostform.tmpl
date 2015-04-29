@@ -1,0 +1,51 @@
+<!-- tmpl_include name="header.tmpl" -->
+
+<!-- tmpl_if viewing_old_version -->
+<p>
+You're EDITING old version number <!-- tmpl_var name="version_number" -->. <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="parent_id" -->/<!-- tmpl_var name="uri_title" -->">Current version</a>
+</p>
+<!-- /tmpl_if -->
+
+<!-- tmpl_if error_exists -->
+<p>
+<h2>Post Input Error</strong></h2>
+<!-- tmpl_var name="error_message" -->
+</p>
+<!-- /tmpl_if -->
+
+<p>
+<strong>Editing :</strong> <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->"><!-- tmpl_var name="title" --></a>
+</p>
+
+<article class="post">
+<!-- tmpl_var name="formatted_text" -->
+</article>
+
+<p>
+<form id="parulaform" method="post" action="<!-- tmpl_var name="cgi_app" -->/updatepost">
+<input type="hidden" name="post_id" value="<!-- tmpl_var name="post_id" -->"> 
+<input type="hidden" name="post_digest" value="<!-- tmpl_var name="post_digest" -->"> 
+
+<textarea id="textareaboxpost" name="markup_text" rows="25" cols="80" ><!-- tmpl_var name="markup_text" --></textarea>
+</p>
+
+<div style="float:right">
+<a href="<!-- tmpl_var name="cgi_app" -->/splitscreenedit/<!-- tmpl_var name="post_id" -->"><small>split</small></a>
+
+</div>
+
+<p> 
+reason for edit (optional)
+<input size="30" maxlength="80" type="text" name="edit_reason" value="<!-- tmpl_var name="edit_reason" -->">
+</p>
+ 
+<p>
+<input class="submitbutton" type="submit" name="sb" value="Preview">
+</p>
+
+<p> 
+<input class="submitbutton" type="submit" name="sb" value="Update">
+</p>
+
+</form>
+<!-- tmpl_include name="footer.tmpl" -->

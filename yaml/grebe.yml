@@ -1,0 +1,50 @@
+---
+    template_home:                  /home/babyu/Grebe/tmpl
+    post_templates:                 /home/babyu/posts
+    post_markup:                    /home/babyu/markup
+    site_name:                      BabyU
+    app_name:                       Grebe v1.0
+    cgi_app:                         
+    home_page:                      http://babyu.soupmode.com
+    site_description:               Test Content
+    admin_email:                    na
+    admin_email_2:                  na 
+    domain_name:                    babyu.soupmode.com
+    css_dir_url:                    http://babyu.soupmode.com/css 
+    maincss_url:                    http://babyu.soupmode.com/css/grebe.css
+    api_url:                        http://babyu.soupmode.com/api/v1
+#    background_image:               http://babyu.soupmode.com/images/e_facebook-profile-photo-2.jpg 
+#    background_image:               http://babyu.soupmode.com/images/BU-header1-d.jpg
+    background_image:               http://babyu.soupmode.com/images/babyu-banner-1.PNG
+    cookie_prefix:                  babyu
+    default_font_type:              sansserif
+    max_title_length:               150
+    max_entries_on_page:            15 
+    max_pwd_len:                    30
+    min_pwd_len:                    8
+    database_host:                  dbhost
+    database_name:                  dbname
+    database_username:              dbusername
+    database_password:              dbpassword
+    dbtable_users:                  grebe_users
+    dbtable_posts:                  grebe_posts
+    dbtable_tags:                   grebe_tags
+    dbtable_sessionids:             grebe_sessionids
+    valid_html:                     form input div span table a th tr td center pre dl dt dd img code pt em strong br blockquote big small strike del ins b i u section article
+    max_unique_hashtags:            10
+    write_template:                 0
+    write_markup:                   1
+    read_template:                  0
+    write_html_to_redis:            0
+    read_html_from_redis:           0
+    mailgun_api_key:                mailgun-api-key
+    mailgun_domain:                 mailgun-domain 
+    mailgun_from:                   mailgun-from
+    #
+    debug_mode:                     0
+    new_user_signups_allowed:       1
+    passwordless_login:             1
+    multiple_sessionids:            1
+    memcached_port:                 11211
+    write_html_to_memcached:        1
+    read_html_from_memcached:       1

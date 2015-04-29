@@ -1,0 +1,15 @@
+<!-- tmpl_include name="header.tmpl" -->
+
+<p>
+<strong>Tags by</strong>
+   <a href="<!-- tmpl_var name="cgi_app" -->/tags/name">name</a>
+ - <a href="<!-- tmpl_var name="cgi_app" -->/tags/count">count</a>
+</p>
+
+<p>
+<!-- tmpl_loop name="tags_loop" -->
+<a href="<!-- tmpl_var name="cgi_app" -->/tag/<!-- tmpl_var name="tag_name" -->"><!-- tmpl_var name="tag_name"></a> - <!-- tmpl_var name="tag_count" --> <br />
+<!-- /tmpl_loop -->
+</p>
+
+<!-- tmpl_include name="footer.tmpl" -->

@@ -1,0 +1,59 @@
+
+<!-- tmpl_loop name="stream_loop" -->
+<div class="post-stream" style="padding-top:20px; padding-bottom:20px;">
+<article class="post"> 
+<div class="<!-- tmpl_var name="user_action" -->">
+
+<!-- tmpl_if imageheader -->
+<div class="stream-imageheader">
+<a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->" class="inner" style="background-image: url('<!-- tmpl_var name="imageheaderurl" -->');">
+<img src="<!-- tmpl_var name="imageheaderurl" -->">
+</a>
+</div>
+<!-- /tmpl_if -->
+
+<!-- <!-- tmpl_var name="post_type" --> -->
+<h3 class="headingtext"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></h3> 
+<div class="largescreens-<!-- tmpl_var name="post_type" -->"> <!-- tmpl_var name="formatted_text" --> </div>
+<!-- tmpl_if more_text_exists -->
+<span class="greytext largescreens-<!-- tmpl_var name="post_type" -->"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">Continue reading &gt;&gt;</a></span>
+<!-- /tmpl_if -->  
+
+<!-- tmpl_if readingtime --> 
+<!--  <span class="homepage-min-read greytext"><!-- tmpl_var name="readingtime" --> min read</span> -->
+<!-- tmpl_else -->
+<!-- tmpl_if more_text_exists -->
+<span class="largescreens-<!-- tmpl_var name="post_type" -->"><br /></span>
+<!-- /tmpl_if -->
+<!-- /tmpl_if -->
+<div>
+<!--
+<span class="homepage-post-author greytext"><a href="<!-- tmpl_var name="cgi_app" -->/user/<!-- tmpl_var name="user_name" -->"><!-- tmpl_var name="user_name" --></a></span> 
+-->
+<span class="homepage-post-date greytext">- <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><time datetime="<!-- tmpl_var name="modified_date" -->"><!-- tmpl_var name="formatted_date" --></time></a></span>
+<!-- tmpl_if reader_is_author -->
+ &nbsp; &nbsp; <span class="greytext"><a title="<!-- tmpl_var name="user_action" --> post" href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="user_action" -->/<!-- tmpl_var name="post_id" -->">[<!-- tmpl_var name="user_action" -->]</a></span>
+<!-- /tmpl_if -->
+</div>
+<!-- tmpl_if tags_exist -->
+<!-- tmpl_if more_text_exists -->
+<div class="homepage-tagstring">
+ <span class="greytext"><!-- tmpl_var name="tag_link_str" --></span>
+</div>
+<!-- /tmpl_if -->
+<!-- /tmpl_if -->
+</div>
+</article> 
+</div>
+<!-- <!-- tmpl_var name="block_id" --> -->
+<!-- <hr class="shortgrey" /> -->
+<!-- /tmpl_loop -->
+
+<br />
+<!-- tmpl_if not_last_page -->
+<span id="olderlink"><a href="<!-- tmpl_var name="next_page_url" -->">Older &gt;&gt;</a></span>
+<!-- /tmpl_if -->
+<!-- tmpl_if not_page_one -->
+<a href="<!-- tmpl_var name="previous_page_url" -->">&lt;&lt; Newer</a>
+<!-- /tmpl_if -->
+

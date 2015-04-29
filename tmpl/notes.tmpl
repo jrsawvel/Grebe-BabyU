@@ -1,0 +1,20 @@
+<!-- tmpl_include name="header.tmpl" -->
+<!--
+<p>
+Notes For &ldquo;<!-- tmpl_var name="author_name" -->&rdquo; 
+ - <a href="<!-- tmpl_var name="cgi_app" -->/notes/<!-- tmpl_var name="author_name" -->">#</a>
+ - <a href="<!-- tmpl_var name="cgi_app" -->/notes/<!-- tmpl_var name="author_name" -->/rss">rss</a>
+</p>
+-->
+<!-- tmpl_if loggedin -->
+<p>
+<form id="grebeform" method="post" action="<!-- tmpl_var name="cgi_app" -->/createpost">
+<input type="hidden" name="post_location" value="notes_stream"> 
+<textarea id="microblogtextareabox" name="markup_content" rows="5" cols="50" wrap="virtual" autofocus><!-- tmpl_var name="microblogpostingtext" --></textarea>
+<br>
+<input class="submitbutton" type="submit" name="sb" value="Post">
+</form>
+</p>
+<!-- tmpl_include name="inc_streamloop.tmpl" -->
+<!-- /tmpl_if -->
+<!-- tmpl_include name="footer.tmpl" -->

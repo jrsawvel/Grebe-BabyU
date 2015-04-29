@@ -1,0 +1,81 @@
+
+<!--
+<!-- tmpl_var name="usinglargeimageheader" -->
+<!-- tmpl_var name="largeimageheaderurl" -->
+-->
+
+<!-- <!-- tmpl_var name="post_type" --> -->
+
+<!-- tmpl_if usingimageheader -->
+<center>
+<img src="<!-- tmpl_var name="imageheaderurl" -->">
+</center> 
+<!-- /tmpl_if -->
+
+<article class="post">
+<!-- tmpl_if usingtoc -->
+<div id="toc">
+<!-- tmpl_loop name="toc_loop" -->
+<span class="toclevel<!-- tmpl_var name="level" -->">&#149; <a href="#<!-- tmpl_var name="cleantitle" -->"><!-- tmpl_var name="toclink" --></a></span><br />
+<!-- /tmpl_loop -->
+</div>
+<!-- /tmpl_if -->
+
+<!-- tmpl_if parent_id -->
+<p>
+<small><strong>You're viewing old version number <!-- tmpl_var name="version" --></strong> - 
+ <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="parent_id" -->">Current version</a></small>
+</p>
+<!-- /tmpl_if -->
+
+<!-- tmpl_if reader_is_author -->
+<div style="float:right;  margin-top: 15px;">
+<span class="greytext"><a href="<!-- tmpl_var name="cgi_app" -->/edit/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">EDIT</a></span>
+</div>
+<!-- tmpl_else -->
+<!-- tmpl_if reading_time -->
+<!--
+<div id="post-min-read">
+<small><!-- tmpl_var name="reading_time" --> min</small>
+</div>
+-->
+<!-- /tmpl_if -->
+<!-- /tmpl_if -->
+
+<section id="post-top">
+<center><h1 class="headingtext"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></h1></center>
+</section>
+<!-- tmpl_var name="formatted_text" -->
+
+<!-- 
+<div class="greytext">
+<p>
+by <a href="<!-- tmpl_var name="cgi_app" -->/user/<!-- tmpl_var name="author_name" -->"><!-- tmpl_var name="author_name" --></a>
+ - <!-- tmpl_var name="word_count" --> words
+<!-- tmpl_if reading_time -->
+ - <!-- tmpl_var name="reading_time" --> min read
+<!-- /tmpl_if -->
+<br />
+created: <time datetime="<!-- tmpl_var name="created_date" -->"><!-- tmpl_var name="formatted_created_date" --></time>
+<!-- tmpl_if modified -->
+ - modified: <time datetime="<!-- tmpl_var name="modified_date" -->"><!-- tmpl_var name="formatted_modified_date" --></time>
+<!-- /tmpl_if -->
+ - <a title="Permalink" href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">#</a>
+<br />
+ <a title="Versions" href="<!-- tmpl_var name="cgi_app" -->/source/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">source</a>
+  -
+ <a title="Versions" href="<!-- tmpl_var name="cgi_app" -->/versions/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">versions</a>
+
+<!-- tmpl_if related_posts_count -->
+<!--  - <a href="<!-- tmpl_var name="cgi_app" -->/relatedposts/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">related posts: <!-- tmpl_var name="related_posts_count" --></a> -->
+<!-- /tmpl_if -->
+ - <a href="<!-- tmpl_var name="cgi_app" -->/relatedposts/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">related posts</a>
+
+<!-- tmpl_if reader_is_author -->
+ - <a href="<!-- tmpl_var name="cgi_app" -->/edit/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">EDIT</a>
+<!-- /tmpl_if -->
+</p>
+</div>
+-->
+
+</article>
