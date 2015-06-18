@@ -1,0 +1,81 @@
+
+#
+# mywebsite.com
+#
+
+
+server {
+	listen   80; ## listen for ipv4; this line is default and implied
+#	listen   [::]:80;  # default ipv6only=on; ## listen for ipv6
+
+#	root /home/mywebsite/html;
+#	index index.html index.htm;
+
+	# Make site accessible from http://localhost/
+	server_name mywebsite.com www.mywebsite.com;
+
+        # enabled caching
+        # learned from: https://gist.github.com/magnetikonline/10450786
+        # example FastCGI cache exception rules
+        set $fastcgi_skipcache 0;
+        if ($http_x_custom_header) {
+           set $fastcgi_skipcache 0;
+        }
+        if ($uri ~ "/post/") {
+             set $fastcgi_skipcache 0;
+        }
+        if ($uri ~ "/([0-9]+)") {
+            set $fastcgi_skipcache 0;
+        }
+        if ($http_cookie ~* 'beeruserid=1') {
+            set $fastcgi_skipcache 1;
+        }
+        if ($request_method = POST) {
+	    set $fastcgi_skipcache 1;
+	}   
+	if ($query_string != "") {
+            set $fastcgi_skipcache 1;
+	}   
+        if ($query_string) {
+           set $fastcgi_skipcache 1;
+        }
+        # end cache rules block
+
+
+        location ~ ^/(css/|javascript/|images/|html/) {
+          root /home/mywebsite/Grebe/root;
+          access_log off;
+          expires max;
+        }
+
+        location /api/v1 {
+	     root /home/mywebsite/Grebe/root/api/v1;
+             index grebeapi.pl;
+             rewrite  ^/(.*)$ /grebeapi.pl?query=$1 break;
+             fastcgi_pass  127.0.0.1:8999;
+             fastcgi_index grebeapi.pl;
+             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+             include fastcgi_params;
+        }
+
+        location / {
+	     root /home/mywebsite/Grebe/root;
+             index grebe.pl;
+             rewrite  ^/(.*)$ /grebe.pl?query=$1 break;
+             fastcgi_pass  127.0.0.1:8999;
+             fastcgi_index grebe.pl;
+             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+             include fastcgi_params;
+
+
+             # enabled caching
+             # learned from: https://gist.github.com/magnetikonline/10450786
+             fastcgi_cache        fastcgicache;
+             fastcgi_cache_bypass $fastcgi_skipcache;
+             fastcgi_no_cache     $fastcgi_skipcache;
+             add_header X-Cache   $upstream_cache_status;
+        }
+
+}
+
+

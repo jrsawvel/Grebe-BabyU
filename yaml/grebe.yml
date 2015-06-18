@@ -1,31 +1,29 @@
 ---
-    template_home:                  /home/babyu/Grebe/tmpl
-    post_templates:                 /home/babyu/posts
-    post_markup:                    /home/babyu/markup
+    template_home:                  /home/babyuProd/Grebe/tmpl
+    post_templates:                 /home/babyuProd/posts
+    post_markup:                    /home/babyuProd/markup
     site_name:                      BabyU
     app_name:                       Grebe v1.0
     cgi_app:                         
-    home_page:                      http://babyu.soupmode.com
-    site_description:               Test Content
+    home_page:                      http://babyutoledo.com
+    site_description:               Baby University
     admin_email:                    na
     admin_email_2:                  na 
-    domain_name:                    babyu.soupmode.com
-    css_dir_url:                    http://babyu.soupmode.com/css 
-    maincss_url:                    http://babyu.soupmode.com/css/grebe.css
-    api_url:                        http://babyu.soupmode.com/api/v1
-#    background_image:               http://babyu.soupmode.com/images/e_facebook-profile-photo-2.jpg 
-#    background_image:               http://babyu.soupmode.com/images/BU-header1-d.jpg
-    background_image:               http://babyu.soupmode.com/images/babyu-banner-1.PNG
-    cookie_prefix:                  babyu
+    domain_name:                    babyutoledo.com
+    css_dir_url:                    http://babyutoledo.com/css 
+    maincss_url:                    http://babyutoledo.com/css/grebe.css
+    api_url:                        http://babyutoledo.com/api/v1
+    background_image:               http://babyutoledo.com/images/babyu-banner-1.PNG
+    cookie_prefix:                  babyuProd
     default_font_type:              sansserif
     max_title_length:               150
     max_entries_on_page:            15 
     max_pwd_len:                    30
     min_pwd_len:                    8
-    database_host:                  dbhost
-    database_name:                  dbname
-    database_username:              dbusername
-    database_password:              dbpassword
+    database_host:                  db_host_name
+    database_name:                  db_name
+    database_username:              db_user_name
+    database_password:              db_password
     dbtable_users:                  grebe_users
     dbtable_posts:                  grebe_posts
     dbtable_tags:                   grebe_tags
@@ -37,14 +35,14 @@
     read_template:                  0
     write_html_to_redis:            0
     read_html_from_redis:           0
-    mailgun_api_key:                mailgun-api-key
-    mailgun_domain:                 mailgun-domain 
-    mailgun_from:                   mailgun-from
+    mailgun_api_key:                mailgun_api_key
+    mailgun_domain:                 mailgun_domain_name
+    mailgun_from:                   Mailgun Sandbox <mailgun_info>
     #
     debug_mode:                     0
-    new_user_signups_allowed:       1
+    new_user_signups_allowed:       0
     passwordless_login:             1
     multiple_sessionids:            1
-    memcached_port:                 11211
+    memcached_port:                 11215
     write_html_to_memcached:        1
     read_html_from_memcached:       1

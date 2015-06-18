@@ -2,9 +2,9 @@
 
 Spring 2015
 
-Test website built from the Grebe codebase.
+Website built from the Grebe codebase to support a non-profit.
 
-[http://babyu.soupmode.com](http://babyu.soupmode.com)
+[http://babyutoledo.com](http://babyutoledo.com)
 
 Baby University helps families in South Toledo prepare their children for school.
 

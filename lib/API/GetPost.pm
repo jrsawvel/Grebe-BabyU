@@ -43,6 +43,9 @@ sub get_post {
         if ( $subroutine_access_type ne "private" ) {
             Error::report_error("404", "Post unavailable.", "Post ID not found");
         } else {
+            $hash_ref->{status}            = 404;
+            $hash_ref->{user_message}      = "Post unavailable";
+            $hash_ref->{system_message}    = "Post with ID number '$post_id' does not exist.";
             return $hash_ref;
         }
     } else {

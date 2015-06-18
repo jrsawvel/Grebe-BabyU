@@ -146,7 +146,7 @@ sub show_post {
     } elsif ( $rc >= 400 and $rc < 500 ) {
             Page->report_error("user", "$json->{user_message}", $json->{system_message});
     } else  {
-        Page->report_error("user", "Unable to complete request.", "Invalid response code returned from API.");
+        Page->report_error("user", "Unable to complete request.", "Invalid response code returned from API. $json->{user_message} $json->{system_message}");
     }
 }
 
