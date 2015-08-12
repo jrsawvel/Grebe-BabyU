@@ -251,17 +251,17 @@ header a:hover {
    ========================================================================== */
 
 footer a {
-    color: #666666;
+    color: #666666; 
     text-decoration: none;
 }
 
 footer a:visited {
-    color: #666666;
+    color: #666666; 
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #666666;
+    color: #666666; 
     text-decoration: underline;
 }
 
@@ -375,18 +375,18 @@ footer {
 
 /* for the h1 title on the article page */
 #post-top {
-    padding-top: 0px;  
+    /* padding-top: 0px; */
+    padding-top: 10px;  
 }
 
 /* on the stream page that show parts of a post/article */
 .post-stream {
-/*    padding: 20px 0 36px 0; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
-/*    padding: 20px 0 20px 0;  */
-/*    padding: 0 0 20px 0;   */
-    padding-top: 5px;
-    padding-bottom: 5px;
-/*   border: 1px solid #ff0; */
+.block-stream {
+    padding-top: 20px;
 }
 
 .post-stream h3 {
@@ -744,6 +744,20 @@ margin-top: 20px;
     display: none;
 }
 
+.blue-links a {
+    color: #0080FF;
+    text-decoration: underline;
+}
+.blue-links a:visited {
+    color: #0080FF;
+    text-decoration: underline;
+}
+
+.blue-links a:hover {
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
 /* g. small, grey-colored text links */
 .greytext {
     font-size: 80%;
@@ -1074,7 +1088,24 @@ margin-top: 20px;
     position: relative;
 }
 
+sup {
+    margin-left: 3px;
+    font-size: 90%;
+    background: #ffff8d; 
+    /* border: 1px solid #ddd; */
+}
 
+sup a {
+    text-decoration: none;
+}
+sup a:hover {
+    text-decoration: underline;
+}
+
+p.footnote sup {
+    background: #fff;
+    border: none;
+}
 
 
 /* ==========================================================================
@@ -1175,10 +1206,6 @@ margin-top: 20px;
     /* .homepage-post-author, .homepage-post-date */
     .largescreens-article, .largescreens-draft, .homepage-min-read,  .homepage-tagstring, #post-min-read {
      /*   display: none; */ /* commented out for testing on 19jun2014 */
-    }
-
-    .post-stream {
-/*        padding: 10px 0 10px 0;  */
     }
 
     .smallscreens {

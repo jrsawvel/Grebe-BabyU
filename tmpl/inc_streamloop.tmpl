@@ -1,6 +1,6 @@
 
 <!-- tmpl_loop name="stream_loop" -->
-<div class="post-stream" style="padding-top:20px; padding-bottom:20px;">
+<div class="post-stream">
 <article class="post"> 
 <div class="<!-- tmpl_var name="user_action" -->">
 
@@ -14,6 +14,7 @@
 
 <!-- <!-- tmpl_var name="post_type" --> -->
 <h3 class="headingtext"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></h3> 
+<div style="font-size:80%; text-align:center;"><span class="homepage-post-date greytext"> <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><time datetime="<!-- tmpl_var name="modified_date" -->"><!-- tmpl_var name="formatted_date" --></time></a></span></div>
 <div class="largescreens-<!-- tmpl_var name="post_type" -->"> <!-- tmpl_var name="formatted_text" --> </div>
 <!-- tmpl_if more_text_exists -->
 <span class="greytext largescreens-<!-- tmpl_var name="post_type" -->"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">Continue reading &gt;&gt;</a></span>
@@ -30,7 +31,7 @@
 <!--
 <span class="homepage-post-author greytext"><a href="<!-- tmpl_var name="cgi_app" -->/user/<!-- tmpl_var name="user_name" -->"><!-- tmpl_var name="user_name" --></a></span> 
 -->
-<span class="homepage-post-date greytext">- <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><time datetime="<!-- tmpl_var name="modified_date" -->"><!-- tmpl_var name="formatted_date" --></time></a></span>
+<!-- MODIFIED DATE <span class="homepage-post-date greytext"> <a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><time datetime="<!-- tmpl_var name="modified_date" -->"><!-- tmpl_var name="formatted_date" --></time></a></span> -->
 <!-- tmpl_if reader_is_author -->
  &nbsp; &nbsp; <span class="greytext"><a title="<!-- tmpl_var name="user_action" --> post" href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="user_action" -->/<!-- tmpl_var name="post_id" -->">[<!-- tmpl_var name="user_action" -->]</a></span>
 <!-- /tmpl_if -->
@@ -46,7 +47,7 @@
 </article> 
 </div>
 <!-- <!-- tmpl_var name="block_id" --> -->
-<!-- <hr class="shortgrey" /> -->
+<hr class="shortgrey" /> 
 <!-- /tmpl_loop -->
 
 <br />

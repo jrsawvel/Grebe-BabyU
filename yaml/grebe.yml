@@ -17,7 +17,7 @@
     cookie_prefix:                  babyuProd
     default_font_type:              sansserif
     max_title_length:               150
-    max_entries_on_page:            15 
+    max_entries_on_page:            10 
     max_pwd_len:                    30
     min_pwd_len:                    8
     database_host:                  db_host_name
