@@ -245,6 +245,7 @@ sub remove_power_commands {
     # textile=yes|no
     # block_id=
     # more_text=yes|no
+    # tmpl=
 
     $str =~ s|^toc[\s]*=[\s]*[noNOyesYES]+||mig;
     $str =~ s|^draft[\s]*=[\s]*[noNOyesYES]+||mig;
@@ -255,6 +256,11 @@ sub remove_power_commands {
     $str =~ s|^textile[\s]*=[\s]*[noNOyesYES]+||mig;
     $str =~ s|^block_id[\s]*=[\s]*[\d]+||mig;
     $str =~ s|^more_text[\s]*=[\s]*[noNOyesYES]+||mig;
+
+    if ( $str =~ m|^tmpl[\s]*=[\s]*(.+)|im ) {
+        my $tmpl = $1;
+        $str =~ s|^tmpl[\s]*=[\s]*$tmpl||im;
+    }
 
     return $str;
 }

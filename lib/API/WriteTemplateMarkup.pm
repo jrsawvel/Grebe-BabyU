@@ -47,7 +47,13 @@ sub _create_html {
     my $hash_ref  = shift;
     my $tmpl_file = shift;
 
-    my $t = Page->new($tmpl_file);
+    my $t;
+
+    if ( $hash_ref->{usingcustomtemplate} ) {
+        $t = Page->new($hash_ref->{customtemplate});
+    } else {
+        $t = Page->new($tmpl_file);
+    }
 
     if ( $tmpl_file eq "post" ) {
         my $datetimestr = DateTimeFormatter::create_date_time_stamp_local("(monthname) (daynum), (yearfull) - (12hr):(0min) (a.p.) (TZ)");

@@ -12,6 +12,11 @@ sub show_articles {
     _show_stream($tmp_hash, "articles");
 }
 
+sub show_blog {
+    my $tmp_hash = shift;
+    _show_stream($tmp_hash, "blog");
+}
+
 sub show_articles_for_author {
     my $tmp_hash = shift;
     _show_stream($tmp_hash, "userarticles");
@@ -85,6 +90,8 @@ sub _show_stream {
         } elsif ( lc($tmp_hash->{two}) eq "rss" ) {
             $doing_rss =  1;
         }
+    } elsif ( $post_type eq "blog" ) {
+        $template_name = "blog";
     } elsif ( $post_type eq "notes" ) {
         $query_string .= "&type=note&author=$user_name";
         $template_name = "notes";

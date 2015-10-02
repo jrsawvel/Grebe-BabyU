@@ -57,6 +57,11 @@ sub get_post {
              $hash_ref->{table_of_contents} = 1;
         }
 
+        if ( $hash_ref->{markup_text} =~ m|^tmpl[\s]*=[\s]*(.+)|im ) {
+            $hash_ref->{usingcustomtemplate} = 1;
+            $hash_ref->{customtemplate}   = StrNumUtils::trim_spaces($1);
+        }
+
         if ( $hash_ref->{markup_text} =~ m|^imageheader[\s]*=[\s]*(.+)|im ) {
             $hash_ref->{usingimageheader} = 1;
             $hash_ref->{imageheaderurl}   = StrNumUtils::trim_spaces($1);

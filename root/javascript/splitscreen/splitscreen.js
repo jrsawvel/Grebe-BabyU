@@ -181,9 +181,9 @@ $(function() {
 
         var json_str = $.toJSON(myRequest);
 
-        var user_name  = getCookie('babyuusername');
-        var user_id    = getCookie('babyuuserid');
-        var session_id = getCookie('babyusessionid');
+        var user_name  = getCookie('babyuProdusername');
+        var user_id    = getCookie('babyuProduserid');
+        var session_id = getCookie('babyuProdsessionid');
 
         jQuery.ajax({
                 url: apiurl + '/posts',
@@ -278,9 +278,9 @@ $(function() {
 
         var json_str = $.toJSON(myRequest);
 
-        var user_name  = getCookie('babyuusername');
-        var user_id    = getCookie('babyuuserid');
-        var session_id = getCookie('babyusessionid');
+        var user_name  = getCookie('babyuProdusername');
+        var user_id    = getCookie('babyuProduserid');
+        var session_id = getCookie('babyuProdsessionid');
 
         jQuery.ajax({
                 url: apiurl + '/posts',

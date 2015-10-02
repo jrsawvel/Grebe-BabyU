@@ -42,12 +42,9 @@
 <!-- /tmpl_if -->
 <!-- /tmpl_if -->
 
-<section id="post-top">
-<!-- tmpl_if usingtoc -->
-<h1 class="headingtext"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></h1>
-<!-- tmpl_else -->
+<!-- <section class="smallscreens" id="post-top"> -->
+<section style="display:none;" id="post-top">
 <center><h1 class="headingtext"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></h1></center>
-<!-- /tmpl_if -->
 </section>
 <!-- tmpl_var name="formatted_text" -->
 

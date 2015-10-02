@@ -90,7 +90,11 @@ sub show_post {
         #    Page->report_error("user", "Invalid access.", "Content does not exist.");
         # }
 
-        $t = Page->new("post");
+        if ( $json->{usingcustomtemplate} ) {
+            $t = Page->new($json->{customtemplate});
+        } else {
+            $t = Page->new("post");
+        }
 
         $t->set_template_variable("cgi_app",                 "");
         $t->set_template_variable("post_id",              $json->{post_id});
