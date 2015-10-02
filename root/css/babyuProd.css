@@ -766,6 +766,11 @@ margin-top: 20px;
     line-height: 1.5em;  
     margin-bottom: 20px; 
     display: block;
+
+    text-shadow: 2px 2px #000000; 
+    -moz-text-shadow: 2px 2px 2px #000000;
+    -webkit-text-shadow: 2px 2px 2px #000000;
+    filter: dropshadow(color=#000000, offx=2, offy=2);
 }
 
 #blog-description {
@@ -984,7 +989,7 @@ margin-top: 20px;
     left: 0;
  /*   background-color: rgba(0,0,0,0.3); darker tint */
  /*   background-color: rgba(0,0,0,0.1); light tint */
-    background-color: rgba(0,0,0,0.3); 
+    background-color: rgba(0,0,0,0.2); 
     text-indent: -9999em;
     width: 100%;
     height: 100%;
@@ -1079,6 +1084,7 @@ margin-top: 20px;
     text-decoration: none;
 }
 
+
 .transparent-button {
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -1086,16 +1092,22 @@ margin-top: 20px;
     padding-right: 10px;
     padding-left:10px;
     color: #eee;
-    background:  none;
-    border: 1px solid  #eee;
+    color: #fff;
+    background: none; 
+    border: 1px solid  #fff;
+/*
+    background-color: #000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+*/
 }
 
 .transparent-button a {
-    color: #eee;
+    color: #fff;
     text-decoration: none;
 }
 .transparent-button a:visited {
-    color: #eee;
+    color: #fff;
     text-decoration: none;
 }
 .transparent-button a:hover {
@@ -1107,6 +1119,7 @@ margin-top: 20px;
     background: none; 
     border: 1px solid  #fff;
     text-decoration: none;
+    background-color: #424242;
 }
 
 .clear-button {
