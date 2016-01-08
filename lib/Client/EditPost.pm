@@ -28,6 +28,11 @@ sub show_post_to_edit {
 
 
     if ( $rc >= 200 and $rc < 300 ) {
+
+        if ( !$json->{reader_is_author} ) {
+            Page->report_error("user", "Unable to perform action.", "You are not logged in.");
+        }
+
         my $t = Page->new("editpostform");
         $t->set_template_variable("viewing_old_version",  $json->{parent_id});
         $t->set_template_variable("parent_id",            $json->{parent_id});
@@ -67,6 +72,11 @@ sub splitscreen_edit {
     my $json = decode_json $rest->responseContent();
 
     if ( $rc >= 200 and $rc < 300 ) {
+
+        if ( !$json->{reader_is_author} ) {
+            Page->report_error("user", "Unable to perform action.", "You are not logged in.");
+        }
+
         my $t = Page->new("splitscreenform");
         $t->set_template_variable("action", "updateblog");
         $t->set_template_variable("api_url", Config::get_value_for("api_url"));

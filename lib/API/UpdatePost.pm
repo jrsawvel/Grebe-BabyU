@@ -301,7 +301,8 @@ sub _is_updating_correct_post {
     $post_digest = $db->quote($post_digest);
 
     my $sql = "select title from $dbtable_posts ";
-    $sql .=   "where post_id=$post_id and author_id=$author_id and post_status in ('o','v') and post_digest=$post_digest"; 
+# commented out on 19nov2015 to allow multiple users to update the same post    $sql .=   "where post_id=$post_id and author_id=$author_id and post_status in ('o','v') and post_digest=$post_digest"; 
+    $sql .=   "where post_id=$post_id and post_status in ('o','v') and post_digest=$post_digest"; 
     $db->execute($sql);
 
     if ( $db->fetchrow ) {

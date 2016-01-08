@@ -1,0 +1,92 @@
+h1. Creating and Editing Tips
+
+more.
+
+Related post: "Formatting Help":http://babyutoledo.com/550/formatting-help
+
+
+h2. Create a New Post
+
+When logged into the site, click the "compose" link, which is located at the bottom of the site.
+
+After clicking "compose", you will see a blank text-area box that looks like this.
+
+!https://c2.staticflickr.com/6/5808/23409090522_0e8228da15_z.jpg!
+
+
+br. This simple text-area box is good for quick editing.
+
+It's better to create and edit posts using the JavaScript editor, which can be accessed by clicking the *"editor"* link, located near the lower right corner of the text-area box.
+
+
+
+h2. Edit Existing Post
+
+If you need to edit a post, click the *"EDIT"* link, located at the top or bottom of the page when viewing the post.
+
+The markup for the post will be displayed in the simple and limited text-area box. If it's a quick-edit, this is fine to use. But if a longer editing session is planned, then it's better to use the JavaScript editor.
+
+To edit with the JavaScript editor, click the small *"editor"* link, which is located near the lower right hand corner of the text-area box.
+
+*Note:* If you make changes within the simple, limited text-area box, and then click the editor link to edit with the JavaScript editor, those changes will not be preserved. After making edits, save changes before switching to a different editing mode.
+
+I edit with the JavaScript editor, unless it's a minor, quick change.
+
+
+h2. JavaScript Editor
+
+Clicking the editor link puts you into a better editing/writing area. This is not a WYSIWYG editor. Formatting buttons do not exist. 
+
+This is a plain text editor where you enter formatting commands. The content management system converts those commands into the HTML that gets displayed in a user's web browser.
+
+This enhanced writing area auto-saves every 5 minutes if new content has been added (at least one key has been *pressed.*)
+
+Within the enhanced writing area, you can either write and preview in *split screen* mode or you can click the *right-facing arrows* in the navigation bar to switch to *single screen* mode. This provides a larger writing screen, and it's the preferred writing mode when editing on a phone or tablet.
+
+When writing in single screen mode, and when you click *"preview,"* the formatted page will also be shown in single screen mode.
+
+Previewing a post does not save a post. I will preview often as I make changes, and when I'm satisfied, then I will click save. 
+
+To change from previewing in single screen mode back to writing in single screen mode, click the right-facing arrows again.
+
+To get back to split screen mode, click the *left-facing arrows.* 
+
+Click the arrows to play around. Nothing can be harmed.
+
+To save whenever you want instead of waiting for the autosave to kick in, then click *"save."*
+
+*To open the article in a new browser tab* in order to see how it looks within the website, save it first from within the JavaScript editor, and then right-click on the article title, located at the top of the preview pane, and choose to open the link in a new browser window.
+
+When moving away from the enhanced writing area, you will get a pop-up message, asking if you want to leave the page. Click "confirm" or whatever the answer is to leave the page. This confirmation pop-up will appear even after you have saved the content. 
+
+The confirmation pop-up is a safety feature to ensure that the you saved content before moving away from the article.
+
+The Apple Safari web browser, however, does not support this pop-up confirmation function.
+
+
+h2. JavaScript Editor Screenshots
+
+"Editor" may be an inappropriate term to use to describe this browser-based JavaScript tool.
+
+This is the default display. You write in the left pane, and the content can be previewed in the right pane. This is not a live-preview app. You click "preview" to see how the content would be displayed on the website.
+
+!https://c1.staticflickr.com/1/761/23491482516_2ce3e97bf7_z.jpg!
+
+
+br. Single screen mode for writing.
+
+!https://c1.staticflickr.com/1/649/23517593205_a3ccd77a3b_z.jpg!
+
+
+br. Single screen mode for previewing a post.
+
+!https://c2.staticflickr.com/6/5631/23149612299_b438ff762f_z.jpg!
+
+
+ #help
+
+draft=yes
+
+<!-- author_name: JohnS -->
+<!-- created_date: 2015-12-02 20:19:00 -->
+<!-- modified_date: 2015-12-04 15:23:36 -->

@@ -102,7 +102,7 @@ sub no_password_login {
     my $q = new CGI;
     my $user_digest     = $tmp_hash->{one};
     my $password_digest = $tmp_hash->{two};
-    my $savepassword    = "no";
+    my $savepassword    = "yes"; # changed from 'no' to 'yes' on 4dec2015
 
     my $headers = {
         'Content-type' => 'application/x-www-form-urlencoded'

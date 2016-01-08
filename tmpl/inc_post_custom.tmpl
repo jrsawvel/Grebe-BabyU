@@ -28,7 +28,7 @@
 </p>
 <!-- /tmpl_if -->
 
-<!-- tmpl_if reader_is_author -->
+<!-- tmpl_if loggedin -->
 <div style="float:right;  margin-top: 15px;">
 <span class="greytext"><a href="<!-- tmpl_var name="cgi_app" -->/edit/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">EDIT</a></span>
 </div>
@@ -47,6 +47,14 @@
 <center><h1 class="headingtext"><a href="<!-- tmpl_var name="cgi_app" -->/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->"><!-- tmpl_var name="title" --></a></h1></center>
 </section>
 <!-- tmpl_var name="formatted_text" -->
+
+<!-- tmpl_if loggedin --> 
+<div class="greytext">
+ <a title="Markup Source" href="<!-- tmpl_var name="cgi_app" -->/source/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">source</a>
+  -
+ <a title="Versions" href="<!-- tmpl_var name="cgi_app" -->/versions/<!-- tmpl_var name="post_id" -->/<!-- tmpl_var name="uri_title" -->">versions</a>
+</div>
+<!-- /tmpl_if -->
 
 <!-- 
 <div class="greytext">

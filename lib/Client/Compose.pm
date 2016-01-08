@@ -17,6 +17,11 @@ sub show_new_post_form {
     my $rc = $rest->responseCode();
     my $json = decode_json $rest->responseContent();
     if ( $rc >= 200 and $rc < 300 ) {
+
+        if ( !User::get_logged_in_flag() ) {
+            Page->report_error("user", "Unable to perform action.", "You are not logged in.");
+        }
+
         my $t = Page->new("newpostform");
         $t->display_page("Compose new message");
     } elsif ( $rc >= 400 and $rc < 500 ) {
@@ -43,6 +48,11 @@ sub show_splitscreen_form {
     my $rc = $rest->responseCode();
     my $json = decode_json $rest->responseContent();
     if ( $rc >= 200 and $rc < 300 ) {
+
+        if ( !User::get_logged_in_flag() ) {
+            Page->report_error("user", "Unable to perform action.", "You are not logged in.");
+        }
+
         my $t = Page->new("splitscreenform");
         $t->set_template_variable("action", "addarticle");
         $t->set_template_variable("api_url", Config::get_value_for("api_url"));

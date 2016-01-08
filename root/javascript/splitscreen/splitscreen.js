@@ -192,7 +192,7 @@ $(function() {
                 success: function (data, textStatus, xhr) {
                     var obj = $.parseJSON(xhr.responseText);
                  if ( obj['post_type'] == "article" ) {
-                     $('#text_preview').set('innerHTML', '<h1>' + obj['title'] + '</h1>' + obj['formatted_text']);
+                     $('#text_preview').set('innerHTML', '<center><h1 class="headingtext">' + obj['title'] + '</h1></center>' + obj['formatted_text']);
                  } else {
                      $('#text_preview').set('innerHTML', obj['formatted_text']);
                  }
@@ -289,7 +289,7 @@ $(function() {
                 success: function (data, textStatus, xhr) {
                     var obj = $.parseJSON(xhr.responseText);
                  if ( obj['post_type'] == "article" ) {
-                     $('#text_preview').set('innerHTML', '<h1>' + obj['title'] + '</h1>' + obj['formatted_text']);
+                     $('#text_preview').set('innerHTML', '<center><h1 class="headingtext"><a href="/' + obj['post_id'] + '">' + obj['title'] + '</a></h1></center>' + obj['formatted_text']);
                  } else {
                      $('#text_preview').set('innerHTML', obj['formatted_text']);
                  }

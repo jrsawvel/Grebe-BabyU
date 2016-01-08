@@ -1,0 +1,130 @@
+h1. Formatting Sandbox
+
+more.
+
+
+*bold*
+
+_italics_
+
+++bigger text++
+
+--smaller text--
+
+
+This *sentence* will _combine_ different ++formatting++ --options.--
+
+
+hr.
+
+
+Numbered Lists
+
+# A first item
+# A second item
+# A third
+
+
+Nested example:
+
+# Fuel could be:
+## Coal
+## Gasoline
+## Electricity
+# Humans need only:
+## Water
+## Protein
+
+
+hr.
+
+Bullet Points
+
+* A first item
+* A second item
+* A third
+
+
+Nested example:
+
+* Fuel could be:
+** Coal
+** Gasoline
+** Electricity
+* Humans need only:
+** Water
+** Protein
+
+
+hr.
+
+Newlines are preserved. When you hit the return key, the next line of text will be displayed at the start of a new line. Example:
+
+I spoke. 
+And none replied.
+
+
+hr.
+
+trademarked(TM) and copyrighted(C).
+
+
+hr.
+
+
+h1. Header 1
+
+h2. Header 2
+
+h3. Header 3
+
+
+
+hr.
+
+
+Normal, formatted paragraph. 
+
+bq. Indented, blockquoted text.
+
+Another normal paragraph.
+
+
+hr.
+
+Raw URL will be automatically converted into a clickable link:
+
+http://babyutoledo.com
+
+
+Here's how to make text a clickable link:
+
+"Baby University":http://babyutoledo.com
+
+
+
+hr.
+
+
+Embedding images.
+
+Here's a link to an image:
+http://babyutoledo.com/images/babyu-logo-60x49.png
+
+To display the image on a webpage, surrounded the above URL with exclamation marks.
+
+!http://babyutoledo.com/images/babyu-logo-60x49.png!
+
+
+
+hr.
+
+q.
+To highlight text by displaying it with a border and a light blue background, surround the text with q. and q.. commands like this paragraph.
+q..
+
+
+ #help
+
+
+draft=yes 

@@ -72,7 +72,9 @@ sub get_post {
             $hash_ref->{largeimageheaderurl}   = StrNumUtils::trim_spaces($1);
         }
 
-        if ( $hash_ref->{author_id} != $user_auth->{logged_in_user_id} ) {
+#        if ( $hash_ref->{author_id} != $user_auth->{logged_in_user_id} ) {
+# on 19nov2015, switched to the following if line to allow multiple people to edit the same post, wiki-like.
+        if ( !$user_auth->{logged_in_user_id} ) {
             # delete($hash_ref->{post_id});
             delete($hash_ref->{author_id});
             delete($hash_ref->{post_digest});

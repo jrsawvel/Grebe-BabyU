@@ -1,0 +1,227 @@
+h1. Formatting Help
+
+more.
+
+This page contains information about formatting a web post using short markup commands, instead of typing HTML. Most of these formatting commands come from the Textile markup language. Some custom formatting commands were also added.
+
+Related post: "Editing Tips":http://babyutoledo.com/559/editing-tips
+
+
+
+h2. Hashtag
+
+To create a hashtag, simply use the pound sign followed by text that is alphanumeric. The hashtag can be used for categorizing articles and for searching content. Example: #todo for listing posts that need editing.
+
+
+
+
+h2. Text Formatting
+
+
+*bold:* 
+
+* @*bolded text*@ 
+
+
+br. _italics:_
+
+* @_italicized text_@
+
+
+
+br. +underline:+
+
+* @+underlined text+@
+
+
+br. -strikethrough- 
+
+* @-strikethrough text-@
+
+
+br. ++increase font size++ 
+
+* @++bigger font++@
+
+
+
+br. --decrease font size--
+
+* @--smaller font--@
+
+
+h2. Links
+
+Raw URLs are automatically converted to clickable links.
+
+Example: @http://downtowntoledo.org@ 
+Produces: http://downtowntoledo.org
+
+
+br. To create a link with your own supplied text, surround link text with double quotes, then use colon punctuation mark after second double quote, followed by the URL.
+
+Example: @"Food for Thought":http://feedtoledo.org@
+Produces: "Food for Thought":http://feedtoledo.org
+
+
+
+h2. Images
+
+To embed an image, do one of the following, surround *URL to image* with exclamation points.
+
+Example: 
+@!http://farm2.static.flickr.com/1021/752540200_51ad3a840d_m.jpg!@
+
+Produces: 
+!http://farm2.static.flickr.com/1021/752540200_51ad3a840d_m.jpg!
+
+
+*Note:* the URL for the image will probably end with a *.jpg,* *.gif,* or *.png.*
+
+
+
+h2. Blockquotes
+
+To indent a block of text, do:
+
+bc. bq. This block of text will be indented. This Textile command only works for one paragraph at a time. If you want to indent multiple, consecutive paragraphs, then put the bq. command at the start of each paragraph. At least one space must follow the bq. command.
+
+Produces:
+
+bq. This block of text will be indented. This Textile command only works for one paragraph at a time. If you want to indent multiple, consecutive paragraphs, then put the bq. command at the start of each paragraph. At least one space must follow the bq. command.
+
+
+h2. Bullet Point List
+
+Start a new line with an asterisk, followed by at least one space, then your list item.
+
+Example:
+
+bc. * line item one
+* line item two
+* line item three
+
+Produces:
+
+* line item one
+* line item two
+* line item three
+
+
+br. You can also nest list items.
+
+Example:
+
+bc. * line item one
+* line item two
+** line item two-A
+** line item two-B
+*** line item two-B-1
+** line item two-C
+* line item three
+
+Produces:
+
+* line item one
+* line item two
+** line item two-A
+** line item two-B
+*** line item two-B-1
+** line item two-C
+* line item three
+
+
+
+h2. Numbered List
+
+Start a new line with a pound sign, followed by at least one space, then your numbered list item.
+
+Example:
+
+bc. # Seattle Seahawks
+# Denver Broncos
+# San Francisco 49ers
+# New England Patriots
+# Detroit Lions
+# Cleveland Browns
+
+Produces:
+
+# Seattle Seahawks
+# Denver Broncos
+# San Francisco 49ers
+# New England Patriots
+# Detroit Lions
+# Cleveland Browns
+
+
+h2. Headers
+
+Start these commands at the beginning of a line with at least one space between the command and the heading text.
+
+The font size decreases as the heading number type increases.
+
+Example code followed by what's produced:
+
+@h1. Heading one line@
+
+@h2. Heading two line@
+
+@h3. Heading three line@
+
+@h4. Heading four line@
+
+h1. Heading one line
+
+h2. Heading two line
+
+h3. Heading three line
+
+h4. Heading four line
+
+
+h2. Additional Formatting Commands
+
+To highlight or quote text from another source, surround it with the opening and closing 'q' tags: *q.* and *q..* Both must start at the beginning of the line.
+
+Example:
+
+bc.. q.
+Here is some text being quoted from another article. Instead of using italics or double quotes, leave the text as is but surround it with the open and closing 'q' tags. This highlighted text will be indented a little and will have a light blue background.
+
+Here's a second paragraph.
+
+And a third.
+ q..
+
+p. Produces:
+
+q.
+Here is some text being quoted from another article. Instead of using italics or double quotes, leave the text as is but surround it with the open and closing 'q' tags. 
+
+This highlighted text will be indented a little and will have a light blue background.
+
+Here's another paragraph.
+q..
+
+
+br.  *br.* To add a blank line, start this command at the beginning of the line. It can precede text separated by at least one space, or it can be on its own line. To add consecutive blank lines, use the command that many times, each time on its own line.
+
+
+br.  *hr.* Will add a horizontal rule or a  thin line that stretches across all or part of the page. The command must start at the beginning of a line. 
+
+Example: 
+
+@hr.@
+
+Produces:
+
+hr.
+
+ #help
+
+draft=yes
+
+<!-- author_name: JohnS -->
+<!-- created_date: 2015-12-02 19:53:33 -->
+<!-- modified_date: 2015-12-04 15:24:35 -->
