@@ -118,11 +118,21 @@ h4 {
 
 h5 {
     font-size: 1.2em; 
+/*
+    margin: 0;
+    padding:0;
+*/
 }
 
 h2, h3, h4, h5 {
     margin: 70px 0 10px 0;
     padding: 0;
+    /* line-height: 2em; */
+}
+
+h2, h3 {
+    line-height: 1.2em;
+    border-bottom:1px solid #eee;
 }
 
 a {
@@ -400,7 +410,7 @@ footer {
     padding-top: 20px;
 }
 
-.post-stream h3 {
+.post-stream h4 {
     margin: 0;
     text-align: center;
 }
@@ -801,6 +811,9 @@ margin-top: 20px;
 }
 
 /* f. heading text - used for the h1, h2, h3, etc tags */
+.headingtext {
+    color: #0080ff;
+}
 .headingtext a {
     color: #0080ff;
     text-decoration: none;
@@ -815,6 +828,30 @@ margin-top: 20px;
     color: #00BFFF;
     text-decoration: underline;
 }
+
+/*********************/
+
+
+/* different formatting for heading 5 */
+
+h5.headingtext a {
+    color: #000;
+    text-decoration: none;
+}
+
+h5.headingtext a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+h5.headingtext a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/*********************/
+
+
 
 .homepage-headingtext a, h1 {
     text-decoration: none;
