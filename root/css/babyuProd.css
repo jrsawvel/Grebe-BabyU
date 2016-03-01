@@ -40,6 +40,10 @@
    1. HTML - Defining some standard markup commands
    ========================================================================== */
 
+nav {
+/*    display: none; */
+}
+
 html {
     height: 100%;
     max-height: 100%;
@@ -51,7 +55,7 @@ body {
     color: #000000;
     background: #ffffff;
     font-family: "Open Sans", Arial, Helvetica, sans-serif; 
-    font-size: 100%; /* ~16px */ /* this is defined in the text resizer css file */
+    font-size: 100%; /* ~16px */ 
     line-height: 1.5em;
     width: 100%;
 }  
@@ -75,7 +79,6 @@ blockquote {
 }
 
 table {
-/*    font-size: .8em; */
     font-family: "Open Sans", Arial, Helvetica, sans-serif; 
     color: #000000;
     margin: 0;
@@ -118,16 +121,11 @@ h4 {
 
 h5 {
     font-size: 1.2em; 
-/*
-    margin: 0;
-    padding:0;
-*/
 }
 
 h2, h3, h4, h5 {
     margin: 70px 0 10px 0;
     padding: 0;
-    /* line-height: 2em; */
 }
 
 h2, h3 {
@@ -137,14 +135,11 @@ h2, h3 {
 
 a {
     text-decoration: none; 
-    /* orig color: #0000ff; dark blue */
-    /* color: #039be5; */
     color: #0080FF;
     text-decoration: underline;
 }
 
 a:visited {
-/*    orig color: #cc3399; purple */
     color: #0080FF;
     text-decoration: underline;
 } 
@@ -152,12 +147,15 @@ a:visited {
 a:hover {
     text-decoration: underline;
     color: #00BFFF;
+    color: blue;
 }
 
+/*
 a:active {
     text-decoration: underline; 
     color: #ff0000;
 }
+*/
 
 /* ol formatting adapted from: 
    http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/ 
@@ -208,6 +206,14 @@ input {
     padding-left: .4em;
 }
 
+.paypal {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; 
+    border: none;
+    padding-left: 0;
+}
+
 
 /* ==========================================================================
    2. Header and Nav Tag Definitions
@@ -229,8 +235,8 @@ header nav ul li a {
 }
 
 header {
-    text-align: left;
     top: 5px;
+    text-align: left;
     left: 0;
     display: block;
     z-index: 100; 
@@ -242,16 +248,20 @@ header {
 
 header a {
     color: #666666;
+    color: #0080FF;
     text-decoration: none;
 }
 
 header a:visited {
     color: #666666;
+    color: #0080FF;
     text-decoration: none;
 }
 
 header a:hover {
     color: #666666;
+    color: #00BFFF;
+color: blue;
     text-decoration: underline;
 }
 
@@ -294,11 +304,9 @@ footer {
     clear: right;
     clear: left;
     font-size: .9em;
-/*    text-align: center;  */
     padding-top: 25px;
     padding-bottom: 25px;
     color: #000;
-/*    background: #eeeeee; */
 }
 
 #mission {
@@ -316,7 +324,6 @@ footer {
 
 #footer-nav {
     text-align: center;
-    /* background: yellow; */
     height: 120px;
     padding-bottom: 25px;
 }
@@ -346,44 +353,15 @@ footer {
     display: none;
 }
 
-/* 90caf9 = 144,202,249 */
-/* 0080ff = 0,128,255 */
-/*
-.post li a {
-  text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,128,255,0) 50%, rgba(0,128,255,0.6) 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 24px;
-}
-*/
-
-/*
-.post p a {
-  text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,128,255,0) 50%, rgba(0,128,255,0.6) 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 24px;
-}
-*/
-
 .post {
-    color: #333;
     /* font-size: 1.2em;  */
-    /* font-size: 125%; */
     /* font-size: 120%; approx same as 1.2em */
+    /* font-size: 125%; */
     /* font-size: 130%; */
     font-size: 1.33em;
+    color: #333;
     line-height: 1.7em;
 }
-
-/*
-.post ul {
-    margin-top: 0;
-    padding-top: 0;
-} 
-*/
 
 .post p {
     margin-top: 40px;
@@ -419,7 +397,6 @@ footer {
     text-align: center;
     font-size: 3em;
     line-height: 100%;
-    /* font-size: 1.6em; */
 }
 
 .jr {
@@ -455,9 +432,11 @@ footer {
     text-decoration: underline;
 }
 
+/*
 .post a:active strong {
     text-decoration: underline; color: #ff0000;
 }
+*/
 
 .post code {
     font-size:13px;
@@ -486,10 +465,6 @@ footer {
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
-/* a. site-wide responsive content display.
-   used within a section tag that defines the main viewing of the site, 
-   and it's used sitewide as a responsive wrapper to make content scale. */
 
 /* http://stackoverflow.com/questions/796087/make-a-div-into-a-link */
 #clickable-block {
@@ -530,7 +505,6 @@ footer {
 header #homelink {
     position: absolute;
     left: .5em;
-/*    top: .4em; */
     background: none;
     z-index: 99 !important;
     display: none;
@@ -561,10 +535,8 @@ header #homelink {
     padding-left: 10px;
 }
 #site-title {
-    /* font-size 1.2em */
     font-size: 1em;
     color: #f44336;
-    /* padding-top: 10px; */
     padding-top: 0;
     font-weight: bold;
 }
@@ -574,7 +546,6 @@ header #homelink {
 }
     
 #sub-title {
-    /* padding-top: 10px; */
     padding-top: 0;
     color: #222;
 }
@@ -602,8 +573,8 @@ header #homelink {
 }
 
 #homepage-subtitle {
-    /* font-size: 2em; */
-    font-size: 2.5em;
+   /* font-size: 2.5em; */
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -611,12 +582,11 @@ header #homelink {
     margin: 0px auto 0px;
     text-align: center;
     padding: 0px;
-    /* margin-top: 10px; replaced with 25px on 21sep2015 for a little more breathing space at top on home page */
-    margin-top: 25px;
+    margin-top: 10px; 
 }
 #homepage-banner-text h1 {
-    /* font-size: 3em; */
-    font-size: 4em;
+    /* font-size: 4em; */
+    font-size: 3em;
     line-height: 100%;
 }
 
@@ -681,7 +651,7 @@ margin-top: 20px;
 }
 
 #site-head {
-    position: relative;
+/*    position: relative; */
     display: table;
     text-align: center;
     color: #ffffff;
@@ -703,6 +673,8 @@ margin-top: 20px;
     background-position: center;
     width: 100%;
     height: 30px;
+    background: none; /* added on 28Sep2015 */
+    display: none;
 }
 
 #blog-author-image {
@@ -826,6 +798,7 @@ margin-top: 20px;
 
 .headingtext a:hover {
     color: #00BFFF;
+    color: blue;
     text-decoration: underline;
 }
 
@@ -884,6 +857,7 @@ h5.headingtext a:hover {
 }
 .blue-links a:hover {
     color: #00BFFF;
+    color: blue;
     text-decoration: underline;
 }
 
@@ -960,9 +934,6 @@ h5.headingtext a:hover {
 }
 
 .stream-imageheader {
-
-/*    border: 1px solid green; */
-
     height: 300px;
     margin: 0 auto 20px auto; 
     overflow: hidden;
@@ -985,12 +956,6 @@ h5.headingtext a:hover {
     max-width: 100%;
     visibility: hidden
 }
-
-/*
-#content img{
-    border: 5px solid #ffff8d;
-}
-*/
 
 /* tint the image */
 #largeimageheader:before {
@@ -1216,6 +1181,7 @@ h5.headingtext a:hover {
     color: #fff;
     background: #00BFFF;
     border: 1px solid #00bfff;
+    text-decoration: none;
 }
 
 /* k. table of contents box displayed in upper right corner of a post page */
@@ -1326,7 +1292,6 @@ sup {
     margin-left: 3px;
     font-size: 90%;
     background: #ffff8d; 
-    /* border: 1px solid #ddd; */
 }
 
 sup a {
@@ -1354,8 +1319,13 @@ p.footnote sup {
 
 /* 45em = 720 px */
 @media only screen and (max-width: 45em) { 
+    .block-stream {
+        padding-top: 0px;
+    }
+
     #content {
         width: 92%;
+        padding-top: 0px;
     }
     #largeimageheader {
         height: 40%;
@@ -1442,7 +1412,8 @@ p.footnote sup {
         font-size: 2em;
     }
     #homepage-banner-text {
-        margin-top: 10px; 
+        /* margin-top: 10px;  */
+       margin-top: 0px;
     }
     #homepage-banner-text h1 {
         font-size: 2em;
@@ -1458,12 +1429,6 @@ p.footnote sup {
         width: 100%;
         height: 100%;
         left: 0%;
-    }
-
-    .post {
-        /* font-size: 1.15em; commented out on 2-Oct-2014 */
-        /* line-height: 1.4em; commented out on 2-Oct-2014 */
-        /* font-size: 125%; */ /* increases the font size when viewed on a small screen */
     }
 
     #toc {
@@ -1509,6 +1474,25 @@ p.footnote sup {
 
 }
 
+@media only screen and (max-width: 720px) { 
+    #largescreens-main-header, .largescreens-only-homelink {
+        display: none;
+    }
+
+    #site-head {
+        height: 0px; 
+    }
+
+    #homepage-site-head {
+        height: 0px; 
+        display: table;
+    }
+
+    #post-top {
+        padding-top: 5px;  
+    }
+}
+
 @media only screen and (max-width: 480px) { 
 
     .largescreens-donate {
@@ -1534,20 +1518,20 @@ p.footnote sup {
     .smallscreens-green-button {
         display: inline;
     }
-    #site-head, #homepage-site-head {
-        height: 35px;
+/*
+    #homepage-site-head {
+        height: 35px; 
         padding-top: 0;
         margin-top: 0;
     }
+*/
     #content {
         padding-top: 0;
         margin-top: 0;
     }
 
     header {
-      /* top: 0; */
       left: 0;
-      /* position: fixed; */
     }
     header #homelink {
         display: inline;
@@ -1564,7 +1548,8 @@ p.footnote sup {
         font-size: 1.6em;
     }
     #homepage-banner-text {
-        margin-top: 10px; 
+        /* margin-top: 10px;  */
+       margin-top: 0px;
     }
     #homepage-banner-text h1 {
         font-size: 1.6em;
@@ -1633,7 +1618,6 @@ p.footnote sup {
 
 @media only screen and (max-width: 900px) {
     #content {
-/*        padding-top: 20px;  */
     }
 }
 

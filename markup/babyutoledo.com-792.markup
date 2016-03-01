@@ -1,6 +1,9 @@
-h1. Baby University
+h1. test mouse-over-drop-down menu links
 
-<div class="homepage-dropdown"><nav><ul >
+draft=yes
+
+<div class="homepage-dropdown"><nav>
+      <ul >
 
         <li class="donate"><a href="/8/donate"><span class="blue-button">Donate</span></a>
           <ul>
@@ -36,9 +39,8 @@ h1. Baby University
           </ul>
         </li>
 
-        <li class="babyu"><a href="/22/why-baby-u"><span class="blue-button">BabyU</span></a>
+        <li class="news"><a href="/22/why-baby-u"><span class="blue-button">BabyU</span></a>
           <ul>
-            <li><a href="/10/how-baby-u-works">How it Works</a></li>
             <li><a href="/7/cradle-to-career-pipeline">Cradle to Career</a></li>
             <li><a href="/24/why-parents-matter">Why Parents Matter</a></li>
             <li><a href="/999">Curriculum</a></li>
@@ -48,26 +50,16 @@ h1. Baby University
             <li><a href="/647/baby-university-budget">Budget</a></li>
           </ul>
         </li>
-
-        <li class="impact"><a href="/16/impact"><span class="blue-button">Impact</span></a>
+        <li class="contact"><a href="/16/impact"><span class="blue-button">Impact</span></a>
           <ul>
             <li><a href="/18/quotes-from-baby-u-graduates">Testimonials</a></li>
             <li><a href="/999">Outcomes</a></li>
           </ul>
         </li>
-      </ul></nav></div>
+      </ul></nav>
+</div>
 
-
-
-*Problem:* Children from low-income neighborhoods enter Kindergarten 60 percent behind their middle-class counterparts in learning development.
-
-*Solution:* Baby U gives parents the tools to close this education gap, so that children in the South Toledo Kids Zone are ready to learn when they start school.
-
-*Why?* We believe in order to improve a neighborhood, we must nurture it's greatest asset: *_The Family._* Baby U educates and strengthens our urban families.
-
-
-block_id=1000
 
 <!-- author_name: JohnS -->
-<!-- created_date: 2015-06-15 17:15:23 -->
-<!-- modified_date: 2016-02-29 21:33:38 -->
+<!-- created_date: 2016-02-27 17:46:47 -->
+<!-- modified_date: 2016-02-27 18:31:11 -->

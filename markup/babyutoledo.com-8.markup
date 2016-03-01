@@ -2,7 +2,7 @@ h1. Donate
 
 !https://c2.staticflickr.com/6/5720/21195003924_8dd42bcd5a_c.jpg!
 
-Your generous donation is greatly appreciated by everyone at Baby University. We are honored that you have chosen to partner with us in "serving the residents of South Toledo.":http://babyutoledo.com/19/south-toledo-kids-zone
+Your generous donation is greatly appreciated by everyone at Baby University. We are honored that you have chosen to partner with us in serving the residents of South Toledo.
 
 more.
 
@@ -14,8 +14,15 @@ If you have questions, regarding donations, or if you would like to make a donat
 
 h2. Donation
 
-Your donation helps fund Baby U's on-going operating costs.  We are extremely grateful for your support.
-!/images/paypal-donate-button.jpg! 
+We accept online donations through PayPal. You can enter any amount for a one-time donation, or you can choose to have the same amount donated automatically each month.
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" class="paypal" name="cmd" value="_s-xclick">
+<input type="hidden" class="paypal" name="hosted_button_id" value="6GMAA4VYCAJC4">
+<input type="image" class="paypal" src="http://babyutoledo.com/images/paypal-donate-button.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="0" height="0">
+</form>
+
 
 You may also send a check to: 
  Baby University
@@ -29,7 +36,16 @@ h2. Adopt a Family
 
 Read more about "'adopting a family'":http://babyutoledo.com/4/adopt-a-family with your donations.
 
-!http://babyutoledo.com/images/paypal-donate-button.jpg!
+bq. For a donation of $1,000, you can sponsor a family to participate in Baby University and help us achieve our mission.
+
+You can use PayPal to support educating a family.
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MHFPBWJ65J6S8">
+<input class="paypal" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
 Alternatively, you can Adopt a Family by printing, completing, and mailing this form, which is an Acrobat PDF file: "BabyU Adopt a Family Form.":http://babyutoledo.com/docs/BabyU-Adopt-A-Family.pdf
 
@@ -59,11 +75,6 @@ Before completing your bequest to Baby University, please "contact us":http://ba
 
 
 
-h2. Related Info
-
-* "Baby U Donors":http://babyutoledo.com/20/donors
-* "Donor Testimonials":http://babyutoledo.com/9/donor-testimonials
-
 <!-- author_name: JohnS -->
 <!-- created_date: 2015-06-15 20:04:51 -->
-<!-- modified_date: 2015-11-20 20:26:03 -->
+<!-- modified_date: 2016-02-24 01:02:46 -->

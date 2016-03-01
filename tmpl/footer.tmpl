@@ -50,9 +50,12 @@
 <div>
 860 Orchard St.; Toledo, OH 43609 | Phone: 419-855-2516
 </div>
+
+<!--
 <div class="blue-links">
 <a href="http://babyutoledo.com/607/baby-university-board-members">Baby U Board Members</a>
 </div>
+-->
 
 <!-- tmpl_if loggedin --> 
 <div> 
@@ -61,30 +64,24 @@
  &nbsp; <a title="Notes" href="<!-- tmpl_var name="cgi_app" -->/notes">[notes]</a>
  &nbsp; <a title="Create new post" href="<!-- tmpl_var name="cgi_app" -->/compose">[compose]</a>
 </div>
-<!-- /tmpl_if -->
-</div> <!-- close style -->
-
-<!-- commented these two options out on 2-Oct-2014 because these won't work if caching
-<p>
-               <a href="<!-- tmpl_var name="cgi_app" -->/textsize/small"     title="Switch to small text size"><span style="font-size:90%">A</span></a>
- &nbsp; &nbsp; <a href="<!-- tmpl_var name="cgi_app" -->/textsize/medium"    title="Switch to default text size"><span style="font-size:120%">A</span></a>
- &nbsp; &nbsp; <a href="<!-- tmpl_var name="cgi_app" -->/textsize/large"     title="Switch to large text size"><span style="font-size:150%">A</span></a>
-</p>
-<p>
-               <a href="<!-- tmpl_var name="cgi_app" -->/fonttype/serif"     title="Switch to serif font">serif</a> 
- &nbsp; &nbsp; <a href="<!-- tmpl_var name="cgi_app" -->/fonttype/sansserif" title="Switch to sans-serif font">sans-serif</a> 
-</p>
--->
-
-<!--
 <div>
 current date: <!-- tmpl_var name="serverdatetime" -->
 </div>
--->
+<!-- /tmpl_if -->
+</div> <!-- close style -->
 
 </footer>
 
-<!-- </div> --> <!-- close scroll_text div id in header template files -->
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+<script src="http://babyutoledo.com/javascript/meanmenu/jquery.meanmenu.js"></script> 
+<script>
+jQuery(document).ready(function () {
+    jQuery('header nav').meanmenu();
+});
+</script>
+
+
 
 </body>
 </html>

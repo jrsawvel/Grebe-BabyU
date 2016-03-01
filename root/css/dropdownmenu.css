@@ -1,0 +1,192 @@
+
+/*
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  background: #fff;
+  font-size: 1.05em;
+  font-family: 'Oswald', sans-serif;
+}
+*/
+
+header {
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+background-color: #fff;
+  text-align: center;
+text-align:left;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+/*  font-size: 1.2em; */
+  line-height: 30px; 
+  text-align: left;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+color: #666;
+color: #0080ff;
+  display: block;
+/*  padding-left: 15px; */
+/*  border-bottom: 1px solid #888; */
+/*  transition: .3s background-color; */
+}
+
+nav a:hover {
+/*  background-color: #005f5f; */
+/*
+background-color: #f5faff;
+background-color: #00BFFF;
+color: #fff;
+*/
+    text-decoration: underline; 
+}
+
+nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+nav li li {
+/*  font-size: .8em; */
+background-color: #E3F2FD;
+/* padding-left: 5px;   */
+}
+
+
+header #homelink a, header #homelink {
+text-decoration: none;
+}
+header #homelink a:hover {
+text-decoration: underline;
+}
+
+header #homelink {
+    position: absolute;
+    left: .5em;
+/* top: .5em; */
+    background: none;
+    z-index: 99 !important;
+    display: none;
+}
+
+.homepage-dropdown .blue-button {
+    font-size: 120%;
+}
+
+.homepage-dropdown nav ul li {
+    text-align: center;
+    width: 18%;
+}
+
+.homepage-dropdown nav ul li ul {
+    padding-top: 2px; 
+}
+
+.homepage-dropdown nav ul li li {
+    text-align: left;
+    width: 200px;
+}
+
+.homepage-dropdown a {
+    font-size: 80%;
+    line-height: 120%;
+}
+
+.homepage-dropdown .donate  a:hover {
+    text-decoration: none;
+}
+.homepage-dropdown .volunteer a:hover {
+    text-decoration: none;
+}
+.homepage-dropdown .about a:hover {
+    text-decoration: none;
+}
+.homepage-dropdown .babyu a:hover {
+    text-decoration: none;
+}
+.homepage-dropdown .impact a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px ) {
+   header #homelink {
+        display: inline;
+        z-index: 2;
+    }
+}
+
+
+/******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (max-width: 800px) {
+.homepage-dropdown nav ul li {
+    text-align: center;
+    width: 17%;
+}
+}
+
+
+@media screen and (min-width: 720px) {
+  nav li {
+/*    width: 150px; */
+    border-bottom: none;
+/*    height: 50px; */
+/*    line-height: 50px; */
+/*    font-size: 1.4em; */
+    display: inline-block;
+/*    margin-right: -4px; */
+  }
+
+  nav a {
+    border-bottom: none;
+  }
+
+  nav > ul > li {
+    text-align: center;
+text-align:left;
+/* padding-right: 15px; */
+  }
+
+  nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  /* Sub Menus */
+  nav li ul {
+    position: absolute;
+    display: none;
+width: 200px;
+    width: inherit;
+  }
+
+  nav li:hover ul {
+    display: block;
+  }
+
+  nav li ul li {
+    display: block;
+  }
+}
+
