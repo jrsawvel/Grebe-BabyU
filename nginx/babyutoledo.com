@@ -5,9 +5,9 @@
 server {
 	listen   80; 
 
-	server_name babyutoledo.com;
+	server_name babyutoledo.com www.babyutoledo.com;
 
-        location ~ ^/(css/|javascript/|images/) {
+        location ~ ^/(css/|javascript/|images/|docs/) {
           root /home/babyuProd/Grebe/root;
           access_log off;
           expires max;

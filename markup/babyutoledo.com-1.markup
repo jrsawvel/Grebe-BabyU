@@ -4,19 +4,22 @@ h1. Baby University
 
         <li class="donate"><a href="/8/donate"><span class="blue-button">Donate</span></a>
           <ul>
+            <li><a href="/8/donate">Donate to Baby U</a></li>
             <li><a href="/4/adopt-a-family">Adopt a Family</a></li>
             <li><a href="/8/donate/#Donation">Use PayPal</a></li>
-            <li><a href="/999">In-kind Donation</a></li>
+            <li><a href="/8/donate#Inkind-Donation">In-kind Donation</a></li>
             <li><a href="/99/historical-donors">Historical Donors</a></li>
             <li><a href="/20/donors#2016-Donors-as-of-Jan-2016">2016 Donors</a></li>
             <li><a href="/671/future-commitments">Future Committments</a></li>
             <li><a href="/8/donate#Employer-Matching-Gift-Program">Company Match</a></li>
             <li><a href="/8/donate#Planned-Giving">Planned Giving</a></li>
+            <li><a href="/8/donate#United-Way">Through United Way</a></li>
           </ul>   
         </li>
 
         <li class="volunteer"><a href="/21/volunteer"><span class="blue-button">Volunteer</span></a>
           <ul>
+            <li><a href="/21/volunteer">Help Baby U</a></li>
             <li><a href="/21/volunteer#Do-you-like-kids">Child Care</a></li>
             <li><a href="/21/volunteer#Do-you-like-to-cook-">Meals</a></li>
             <li><a href="/21/volunteer#Do-you-like-to-listen">Parent Advocate</a></li>
@@ -25,6 +28,7 @@ h1. Baby University
 
         <li class="about"><a href="/3/about"><span class="blue-button">About</span></a>
           <ul>
+            <li><a href="/3/about">About Baby U</a></li>
             <li><a href="/607/baby-university-board-members">Board of Directors</a></li>
             <li><a href="/6/contact">Contact</a></li>
             <li><a href="/15/our-story">Our Story</a></li>
@@ -38,12 +42,13 @@ h1. Baby University
 
         <li class="babyu"><a href="/22/why-baby-u"><span class="blue-button">BabyU</span></a>
           <ul>
+            <li><a href="/22/why-baby-u">Why Baby U</a></li>
             <li><a href="/10/how-baby-u-works">How it Works</a></li>
             <li><a href="/7/cradle-to-career-pipeline">Cradle to Career</a></li>
             <li><a href="/24/why-parents-matter">Why Parents Matter</a></li>
-            <li><a href="/999">Curriculum</a></li>
-            <li><a href="/999">Social Work</a></li>
-            <li><a href="/999">Graduate Class</a></li>
+            <li><a href="/818/curriculum">Curriculum</a></li>
+            <li><a href="/819/social-work">Social Work</a></li>
+            <li><a href="/820/graduate-class">Graduate Class</a></li>
             <li><a href="/19/south-toledo-kids-zone">Kids Zone</a></li>
             <li><a href="/647/baby-university-budget">Budget</a></li>
           </ul>
@@ -51,8 +56,9 @@ h1. Baby University
 
         <li class="impact"><a href="/16/impact"><span class="blue-button">Impact</span></a>
           <ul>
+            <li><a href="/16/impact">Impact</a></li>
             <li><a href="/18/quotes-from-baby-u-graduates">Testimonials</a></li>
-            <li><a href="/999">Outcomes</a></li>
+            <li><a href="/817/outcomes">Outcomes</a></li>
           </ul>
         </li>
       </ul></nav></div>
@@ -66,8 +72,12 @@ h1. Baby University
 *Why?* We believe in order to improve a neighborhood, we must nurture it's greatest asset: *_The Family._* Baby U educates and strengthens our urban families.
 
 
+
+<div style="background:#f5faff;padding:10px;margin-top:60px;font-size:80%;line-height:120%;">
+*Recent News:* April 2016 - "Kelly and David Kaiser":http://babyutoledo.com/15/our-story were finalists for the 2016 Jefferson Award for _"community 'unsung heroes' devoted to public service."_ "More Baby University news.":http://babyutoledo.com/5/baby-u-in-the-news
+</div>
 block_id=1000
 
 <!-- author_name: JohnS -->
 <!-- created_date: 2015-06-15 17:15:23 -->
-<!-- modified_date: 2016-02-29 21:33:38 -->
+<!-- modified_date: 2016-11-07 12:59:36 -->

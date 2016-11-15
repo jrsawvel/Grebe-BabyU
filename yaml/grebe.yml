@@ -28,7 +28,7 @@
     dbtable_posts:                  grebe_posts
     dbtable_tags:                   grebe_tags
     dbtable_sessionids:             grebe_sessionids
-    valid_html:                     form input div span table a th tr td center pre dl dt dd img code pt em strong br blockquote big small strike del ins b i u section article
+    valid_html:                     form sup input div span table a th tr td center pre dl dt dd img code pt em strong br blockquote big small strike del ins b i u section article
     max_unique_hashtags:            10
     write_template:                 0
     write_markup:                   1

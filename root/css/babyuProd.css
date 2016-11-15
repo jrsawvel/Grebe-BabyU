@@ -227,7 +227,20 @@ header nav ul {
 
 header nav ul li {
     display: inline-block; 
+
+/*
+    text-align:left;
+    padding: 0 .5em;
+    color: #0080FF;
+*/
 }
+
+/*
+header nav ul li:hover {
+    display: inline-block; 
+    background: #f5faff;
+}
+*/
 
 header nav ul li a {
     text-align: left;
@@ -1318,7 +1331,7 @@ p.footnote sup {
 */
 
 /* 45em = 720 px */
-@media only screen and (max-width: 45em) { 
+@media only screen and (max-width: 45em) {  
     .block-stream {
         padding-top: 0px;
     }
