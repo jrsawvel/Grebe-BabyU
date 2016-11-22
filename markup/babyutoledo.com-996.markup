@@ -1,9 +1,66 @@
 # Meeting Notes - Nov 1, 2016
 
+more.
 
 newline_to_br = no
 
-### external links
+
+## Questions or Needed Info:
+
+
+
+##### board of directors
+
+- <http://babyutoledo.com/607/baby-university-board-members>
+  - new treasurer bio needed
+
+
+##### volunteer page
+
+- <http://babyutoledo.com/21/volunteer>
+  - should *"outside instructor"* be added as a volunteer type?
+
+
+##### our story page
+
+- <http://babyutoledo.com/15/our-story>
+  - more info needed after 2010.
+
+
+##### mosaic ministries page
+
+- <http://babyutoledo.com/164/mosaic-ministries-of-south-toledo>
+  - should this baby u page be removed from the baby u website?
+  - what about the link at the bottom of each page that points to the mosaic ministries page?
+
+
+##### parent advocate or social worker?
+
+- in multiple web pages, the phrase *"parent advocate"* was changed to *"social worker"* except in the drop-down menus under "volunteer".
+- <http://babyutoledo.com/21/volunteer#Do-you-like-to-listen>
+  - at baby u classes, is this volunteer person a parent advocate, a social worker, or something else?
+  - should parent advocate remain in the other pages because it "sounds better" than social worker?
+
+
+##### united way donation
+
+- in the united way section of the donation page, more details are needed about the process of donating through the uw to baby u.
+  - <http://babyutoledo.com/8/donate#United-Way>
+- do we need more info about the algorithm that the united way uses to decrease the amount donated? 
+  - uw claims that a certain percentage of people donate less than they committed, therefore uw created an algorithm that automatically adjusts the amount given to the other org. 
+  - apparently, uw distributes the money to the receiving org before the actual money is received from the donor. this makes sense that uw would create an algorithm, since it could lose money if it distributed the committed amount, and  it received less money committed by the donor. 
+  - but what about the people who actually donate what they committed? it appears that not all of the donors' money is going to the org that was earmarked to receive the money.
+
+
+
+
+hr.
+
+
+
+## Completed Tasks
+
+##### external links
 
 - remove all or nearly all external links. **[completed]**
 - remove footnote links that take a user to the bottom of the page. **[completed]**
@@ -12,59 +69,36 @@ newline_to_br = no
 
 
 
+##### board of directors
 
-### volunteer page
-
-- should outside instructor be added as a volunteer type?
-
-
-
-
-### board of directors
-
-- new treasurer bio needed
-- charity no longer a member
+- Charity no longer a member
   - **[completed - removed the bios of the two former members]**
+  - **[completed - added two new bios]**
 
 
 
-### our story page
-
-- more info needed after 2010.
-
-
-
-### mosaic ministries page
+##### mosaic ministries page
 
 - remove the attachment info that i added to the page. i copied the info from a printed flyer. **[completed]**
 - simply link to a wamteam.org. **[completed]**
-- **should this baby u page be removed altogether?** <http://babyutoledo.com/164/mosaic-ministries-of-south-toledo> what about the link at the bottom of each page that points to the mosaic ministries page?
 
 
 
-
-### drop down menu changes
+##### drop down menu changes
 
 - on home page and article page, add the menu item to the drop-down list.  **[completed]** 
 
 
 
-### parent advocate or social worker?
+##### parent advocate or social worker?
 
-- change the phrase "parent advocate" to "social worker".  **[completed]**
-  - except in the menu option for volunteer. what is the name of the role that deb assumed while volunteering at baby u classes? was that a parent advocate? 
-  - should parent advocate remain in the other pages because it sounds better than social worker?
-
+- change the phrase *"parent advocate"* to *"social worker"*.  **[completed]**
+  - except in the menu option for volunteer. 
 
 
-### united way donation
 
-- in the united way section of the donation page, = more details are needed about the process of donating through the uw to baby u.
-- seek more info about the algorithm that uw uses to decrease the amount donated. 
-- uw claims that a certain percentage of people donate less than they promised, therefore uw created an algorithm that automatically adjusts the amount given to the other org. 
-- apparently, uw donates the money before the actual money is received. this makes sense that uw would create an algorithm, since it could lose money. 
-- but what about the people who actually donate what they committed? it seems that not all of the donors' money is going to the org that was earmarked to receive the money.
+
 
 <!-- author_name: JohnS -->
 <!-- created_date: 2016-11-07 12:57:11 -->
-<!-- modified_date: 2016-11-09 12:56:19 -->
+<!-- modified_date: 2016-11-21 16:50:09 -->
