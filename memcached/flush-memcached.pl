@@ -2,8 +2,8 @@
 
 use strict;
 
-use lib '/home/grebe/Grebe/lib';
-use lib '/home/grebe/Grebe/lib/CPAN';
+use lib '../lib';
+use lib '../lib/CPAN';
 
 use Config::Config;
 use Cache::Memcached::libmemcached;
